@@ -23,5 +23,6 @@ production:
   database: d37ra8s47ab0qo
   username: tgxjjlbiunlvpq
   password: dGdjFoApej-wdrvvTCLN_nAYQ9
+  port: 5432
   pool: 5
   timeout: 5000
