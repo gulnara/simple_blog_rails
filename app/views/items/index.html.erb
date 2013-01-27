@@ -1,0 +1,64 @@
+
+<div id="container" class="container">	
+
+	<%= render 'layouts/menu_panel' %>
+
+	<div class="side-panel">
+		<ul id="side-toc" class="side-toc">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Resources</a></li>
+		</ul>
+	</div>
+
+
+	<div class="bb-custom-wrapper">
+		<div id="bb-bookblock" class="bb-bookblock">
+			<% @all_posts.each do |post| %>
+				<div class="bb-item" id="item1">
+					<div class="content">
+						<div class="scroller">
+							<h2><%= post.title %></h2>
+							<p><%= post.body %></p>
+						</div>
+					</div>
+				</div>
+			<% end %>
+			
+		</div>
+
+		<nav>
+		<ul>
+		<li><span id="bb-nav-prev">
+			<%= image_tag('prev.png', :size=>'40x40') %>
+		</span></li>
+		<li><span id="bb-nav-next">
+			<%= image_tag('next.png', :size=>'40x40') %>
+		</span></li>
+		</li>
+		</nav>
+
+		
+		<span id="tblcontents" class="menu-button">
+			<%= image_tag('menu.png', :size=>'40x40') %>
+		</span>
+		<span id="sidecontents" class="side-button">
+			<%= image_tag('more.png', :size=>'40x40') %>
+		</span>
+		
+
+	</div>
+	</div><!-- /container -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<%= javascript_include_tag('jquery.mousewheel') %>
+<%= javascript_include_tag('jquery.jscrollpane.min') %>
+<%= javascript_include_tag('jquerypp.custom') %>
+<%= javascript_include_tag('jquery.bookblock') %>
+<%= javascript_include_tag('page') %>
+<script>
+	$(function() {
+
+		Page.init();
+
+	});
+</script>
+
