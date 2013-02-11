@@ -30,6 +30,8 @@ group :test, :production, :development do
   gem "rspec-rails", "~> 2.0"
 end
 
+# gem 'ckeditor_rails'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -44,3 +46,5 @@ end
 
 # To use debugger
 # gem 'debugger'
+
+gem "paperclip"

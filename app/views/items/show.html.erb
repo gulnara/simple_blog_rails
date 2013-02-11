@@ -17,6 +17,13 @@
 					<div class="scroller">
 						<h2><%= @item.title %></h2>
 						<p><%= @item.body %></p>
+						<% if @item.image.exists? %>
+      						<%= image_tag @item.image.url (:medium) %><br/>
+ 						<% end %>
+						<%= button_to "delete", item_path(@item), :method => :delete, confirm: "Really delete the article?" %>
+						<%= link_to "edit", edit_item_path(@item) %>
+						<%= render 'items/disqus' %>
+
 					</div>
 				</div>
 			</div>

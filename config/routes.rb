@@ -1,4 +1,8 @@
 Blog::Application.routes.draw do
+  get "static_pages/about"
+  get "static_pages/resources"
+  get "static_pages/admin"
+  
   resources :items
 
   root  :to => "items#index"
