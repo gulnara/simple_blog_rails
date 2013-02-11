@@ -1,0 +1,11 @@
+<h1>Admin Control</h1>
+<h2>Create a New Article</h2>
+<%= render partial: 'items/form' %>
+<h2>List of Posts</h2>
+<ul>
+	<% @items.each do |item| %>
+		<li>
+			<%= link_to item.title, item_path(item), class: 'item_title' %>
+		</li>
+	<% end %>
+</ul>

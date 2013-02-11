@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,800,500);
+
+html { height: 100%; }
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: #10B1C5;
+	text-align:center;
+}
+
+h1 {
+	font-family: 'Raleway', Calibri, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 36px;
+	color: #B0EFF4;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+p{
+	font-family: 'Raleway', Calibri, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #B0EFF4;
+	padding-bottom: 20px;
+}
+
+#social-media-icons{
+	float: center;
+}
+#social-media-icons li{
+	display: inline;
+	padding: 10px 5px 10px 5px;
+}
+
+#unicorn  {
+	padding-top: 70px;
+	float: center;
+}
+
+p a{
+	text-decoration: none;
+	font-weight: 800;
+	color: #0071BC;
+	cursor: pointer;
+}
+
+p a:hover{
+	color:#B0EFF4;
+}
+
+ @-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}to{ -webkit-transform: rotate(360deg);}}
+
+
+
+ .twitter  img:hover{
+-webkit-animation-name: rotate;
+ -webkit-animation-duration: 1s;
+ -webkit-animation-iteration-count: 1;
+ -webkit-animation-function: linear;
+}
+
+ 
+ .dribble img:hover {
+ -webkit-animation-name: rotate;
+ -webkit-animation-duration: 1s;
+ -webkit-animation-iteration-count: 1;
+ -webkit-animation-function: linear;}
+ 
+
+ .behance img:hover {
+ -webkit-animation-name: rotate;
+ -webkit-animation-duration: 1s;
+ -webkit-animation-iteration-count: 1;
+ -webkit-animation-function: linear;}
+
+ .linkedin img:hover {
+ -webkit-animation-name: rotate;
+ -webkit-animation-duration: 1s;
+ -webkit-animation-iteration-count: 1;
+ -webkit-animation-function: linear;}
+ 
+ 
+ .rss img:hover {
+ -webkit-animation-name: rotate;
+ -webkit-animation-duration: 1s;
+ -webkit-animation-iteration-count: 1;
+ -webkit-animation-function: linear;}
+ 
